@@ -1,4 +1,7 @@
-<h1>Generate Bingo Card</h1>
+<div class="heading">
+  <h1 class="title">Soccer Bingo</h1>
+  <%= button_to "Generate Bingo Card", cards_path %>
+</div>
 
 <table>
   <thead>
@@ -8,8 +11,6 @@
   </thead>
 
   <tbody>
-    <%= button_to "New", cards_path %>
-
     <div class="container">
       <div class="game-container">
         <div class="grid-container">
@@ -118,17 +119,6 @@
         </div>
       </div>
     </div>
-  <tbody>
-    <% @cards.each do |card| %>
-      <tr>
-        <td><%= link_to 'Show', card %></td>
-        <td><%= link_to 'Edit', edit_card_path(card) %></td>
-        <td><%= link_to 'Destroy', card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Card', new_card_path %>

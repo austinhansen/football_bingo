@@ -1,5 +1,4 @@
 <p id="notice"><%= notice %></p>
-<h1>Generate Bingo Card</h1>
 
 <table>
   <thead>
@@ -32,31 +31,15 @@
 
           <% @card.phrases.each_slice(5) do |row| %>
             <div class="grid-row">
-                <% row.each do |phrase| %>
-                  <div class="grid-cell">
-                    <div class="line">
-                      <%= phrase.line %>
-                    </div>
-                  </div>
-                <% end %>
-
-            </div>
-          <% end %>
-
-
-<!--
-          <% 5.times do |row| %>
-            <div class="grid-row">
-              <% @card.phrases.each_slice(5) do |row| %>
-                <% row.each do |phrase| %>
-                  <div class="grid-cell">
+              <% row.each do |phrase| %>
+                <div class="grid-cell">
+                  <div class="line">
                     <%= phrase.line %>
                   </div>
-                <% end %>
+                </div>
               <% end %>
             </div>
           <% end %>
- -->
         </div>
       </div>
     </div>
@@ -65,7 +48,4 @@
 
 <br>
 
-<%= link_to 'New Card', new_card_path %>
-
-<%= link_to 'Edit', edit_card_path(@card) %> |
 <%= link_to 'Back', cards_path %>
