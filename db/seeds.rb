@@ -3,5 +3,5 @@
 #
 # Examples:
 #
-Phrase.create([{ line: 'Pace' }, { line: 'Brave' }, { line: 'Cynical foul' }, { line: 'For my money/For me' }, { line: 'Any day of the week' }, { line: 'Stone penalty' }])
+Phrase.create([{ line: 'Pace' }, { line: 'Brave' }, { line: 'Cynical foul' }, { line: 'For my money/For me' }, { line: 'Any day of the week' }, { line: 'Stone penalty' }, { line: 'Penalty kick' }, { line: 'Red card' }, { line: 'Yellow card' }, { line: 'Nutmeg' }, { line: 'Free kick' }, { line: 'Volley' }, { line: 'Stone penalty' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
