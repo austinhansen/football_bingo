@@ -1,0 +1,22 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+
+.bingo {
+  padding-top: 40px;
+  font-size: 4.8rem;
+  text-align: center;
+}
+
+.center-tile {
+ padding-top: 45px;
+ font-size: 1.6rem;
+ text-align: center;
+}
+
+.line {
+ padding-top: 25px;
+ font-size: 1rem;
+ text-align: center;
+}

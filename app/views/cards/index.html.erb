@@ -8,12 +8,30 @@
   </thead>
 
   <tbody>
-    <%= button_to "Some Button", :action=> "cards_path" %>
+    <%= button_to "New", cards_path %>
+
     <div class="container">
       <div class="game-container">
         <div class="grid-container">
           <div class="grid-row">
             <div class="grid-cell">
+              <div class="bingo">B</div>
+            </div>
+            <div class="grid-cell">
+              <div class="bingo">I</div>
+            </div>
+            <div class="grid-cell">
+              <div class="bingo">N</div>
+            </div>
+            <div class="grid-cell">
+              <div class="bingo">G</div>
+            </div>
+            <div class="grid-cell">
+              <div class="bingo">O</div>
+            </div>
+          </div>
+          <div class="grid-row">
+            <div class="grid-cell">
               <div class="phrase"></div>
             </div>
             <div class="grid-cell">
@@ -54,7 +72,7 @@
               <div class="phrase"></div>
             </div>
             <div class="grid-cell">
-              <div class="phrase">BINGO</div>
+              <div class="center-tile">FREE</div>
             </div>
             <div class="grid-cell">
               <div class="phrase"></div>
@@ -100,13 +118,12 @@
         </div>
       </div>
     </div>
-
-    <% @phrases.each do |phrase| %>
+  <tbody>
+    <% @cards.each do |card| %>
       <tr>
-        <td><%= phrase.line %></td>
-        <td><%= link_to 'Show', phrase %></td>
-        <td><%= link_to 'Edit', edit_phrase_path(phrase) %></td>
-        <td><%= link_to 'Destroy', phrase, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', card %></td>
+        <td><%= link_to 'Edit', edit_card_path(card) %></td>
+        <td><%= link_to 'Destroy', card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -114,4 +131,4 @@
 
 <br>
 
-<%= link_to 'New Phrase', new_phrase_path %>
+<%= link_to 'New Card', new_card_path %>

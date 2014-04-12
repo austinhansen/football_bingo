@@ -3,5 +3,5 @@
 #
 # Examples:
 #
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
+Phrase.create([{ line: 'Pace' }, { line: 'Brave' }, { line: 'Cynical foul' }, { line: 'For my money/For me' }, { line: 'Any day of the week' }, { line: 'Stone penalty' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)

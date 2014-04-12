@@ -1,0 +1,71 @@
+<p id="notice"><%= notice %></p>
+<h1>Generate Bingo Card</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <div class="container">
+      <div class="game-container">
+        <div class="grid-container">
+          <div class="grid-row">
+            <div class="grid-cell">
+              <div class="bingo">B</div>
+            </div>
+            <div class="grid-cell">
+              <div class="bingo">I</div>
+            </div>
+            <div class="grid-cell">
+              <div class="bingo">N</div>
+            </div>
+            <div class="grid-cell">
+              <div class="bingo">G</div>
+            </div>
+            <div class="grid-cell">
+              <div class="bingo">O</div>
+            </div>
+          </div>
+
+          <% @card.phrases.each_slice(5) do |row| %>
+            <div class="grid-row">
+                <% row.each do |phrase| %>
+                  <div class="grid-cell">
+                    <div class="line">
+                      <%= phrase.line %>
+                    </div>
+                  </div>
+                <% end %>
+
+            </div>
+          <% end %>
+
+
+<!--
+          <% 5.times do |row| %>
+            <div class="grid-row">
+              <% @card.phrases.each_slice(5) do |row| %>
+                <% row.each do |phrase| %>
+                  <div class="grid-cell">
+                    <%= phrase.line %>
+                  </div>
+                <% end %>
+              <% end %>
+            </div>
+          <% end %>
+ -->
+        </div>
+      </div>
+    </div>
+
+</table>
+
+<br>
+
+<%= link_to 'New Card', new_card_path %>
+
+<%= link_to 'Edit', edit_card_path(@card) %> |
+<%= link_to 'Back', cards_path %>

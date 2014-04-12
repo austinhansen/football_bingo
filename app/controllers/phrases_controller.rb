@@ -1,5 +1,5 @@
 class PhrasesController < ApplicationController
-  before_action :set_phrase, only: [:show, :edit, :update, :destroy]
+  # before_action :set_phrase, only: [:show, :edit, :update, :destroy]
 
   # GET /phrases
   # GET /phrases.json
@@ -9,7 +9,9 @@ class PhrasesController < ApplicationController
 
   # GET /phrases/1
   # GET /phrases/1.json
-  def show
+
+  def generate
+    @phrases = Phrase.all
   end
 
   # GET /phrases/new
