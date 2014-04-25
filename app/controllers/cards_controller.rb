@@ -25,7 +25,7 @@ class CardsController < ApplicationController
   # POST /cards.json
   def create
     @card = Card.new(card_params)
-    @card.phrases = Phrase.all.sample(25)
+    @card.phrases = Phrase.order("RANDOM()").limit(25)
     respond_to do |format|
       if @card.save
         format.html { redirect_to @card, notice: 'Card was successfully created.' }
