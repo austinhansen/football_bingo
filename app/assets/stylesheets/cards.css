@@ -4,21 +4,21 @@
 */
 
 .bingo {
-  padding-top: 40px;
+  color: #000;
   font-size: 4.8rem;
   text-align: center;
 }
 
-.center-tile {
- padding-top: 45px;
- font-size: 1.6rem;
+.line {
+ font-size: 1rem;
  text-align: center;
 }
 
-.line {
- padding-top: 25px;
- font-size: 1rem;
- text-align: center;
+.line a {
+  padding-top: 40px;
+  display:inline-block;
+  width:106px;
+  height:66px;
 }
 
 .heading {
