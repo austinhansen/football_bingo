@@ -12,13 +12,15 @@
 .line {
  font-size: 1rem;
  text-align: center;
+ background-color: rgba(238, 228, 218, 0.35)
 }
 
 .line a {
+  color: #000;
   padding-top: 40px;
   display:inline-block;
-  width:106px;
-  height:66px;
+  width:107px;
+  height:67px;
 }
 
 .heading {
