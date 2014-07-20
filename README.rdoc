@@ -1,28 +1,9 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I built this app because I enjoy watching professional soccer, and I noticed that a lot of the same cliched terms came up in many games. What better way to take advantage of this than a soccer bingo card creator?!
 
-Things you may want to cover:
+Things I learned while making this app:
 
-* Ruby version
+* How to randomize information retrieved from the database.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* This was my first experience with JavaScript. I used JS to implement the click/touch functionality for selecting phrases.
